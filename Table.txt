@@ -1,0 +1,116 @@
+create table Item(
+    Id number(10),
+    Name varchar2(30),
+    Category varchar2(30),
+    Price number(10),
+    constraint ite_id_pk primary key(Id)
+    );
+
+create table OrderInfo(
+    Id number(15),
+    OrderDate varchar2(10),
+    OrderTime varchar2(10),
+    OrderTotal number(10),
+    Discount number(10),
+    VatTotal number(10),
+    NetTotal number(10),
+    PaymentMethod varchar2(5),
+    CashPaid number(10),
+    Change number(10),
+    CardType varchar2(30),
+    CardNum number(20),
+    Status varchar2(15),
+    constraint ord_id_pk primary key(Id)
+    );
+
+create table OrderedItem(
+    OrderId number(15),
+    ItemQty number(10),
+    ItemUnitPrice number(10),
+    ItemName varchar2(30),
+    constraint ord_oid_fk foreign key(OrderId) references OrderInfo(Id)
+    );
+
+create table AdminPassword(
+    Password varchar2(100)
+    );
+
+INSERT INTO AdminPassword
+VALUES ('admin');
+
+
+CREATE SEQUENCE item_itemid_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE
+NOCYCLE;
+
+CREATE SEQUENCE order_orderid_seq
+INCREMENT BY 1
+START WITH 1
+NOCACHE
+NOCYCLE;
+
+
+CREATE OR REPLACE FUNCTION get_price  (item_name  IN  item.name%TYPE)
+   RETURN NUMBER IS	
+item_price item.price%TYPE := 0;
+BEGIN  SELECT price   INTO   item_price  FROM   item  WHERE  name = item_name;
+  RETURN item_price;
+END get_price;
+/
+
+
+create table ItemHistory(
+    Id number(10),
+    OldName varchar2(30),
+    NewName varchar2(30),
+    OldCategory varchar2(30),
+    NewCategory varchar2(30),
+    OldPrice number(10),
+    NewPrice number(10),
+    Time TimeStamp
+        );
+
+
+CREATE or REPLACE TRIGGER item_history_trigger 
+BEFORE UPDATE
+ON item
+FOR EACH ROW 
+BEGIN 
+INSERT INTO ItemHistory 
+VALUES 
+(:old.id, 
+ :old.name,
+ :new.name,
+ :old.category, 
+ :new.category,
+ :old.price,
+ :new.price,
+ sysdate); 
+END; 
+/ 
+
+
+create table DeletedItemList(
+    Id number(10),
+    Name varchar2(30),
+    Category varchar2(30),
+    Price number(10),
+    Time TimeStamp
+        );
+
+CREATE or REPLACE TRIGGER deleted_item_trigger 
+BEFORE Delete
+ON item
+FOR EACH ROW 
+BEGIN 
+INSERT INTO DeletedItemList
+VALUES 
+(:old.id, 
+ :old.name,
+ :old.category, 
+ :old.price,
+ sysdate); 
+END; 
+/ 

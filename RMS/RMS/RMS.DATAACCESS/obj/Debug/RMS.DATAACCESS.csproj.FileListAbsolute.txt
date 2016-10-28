@@ -1,0 +1,20 @@
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\RMS\RMS.DATAACCESS\bin\Debug\RMS.DATAACCESS.dll.config
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\RMS\RMS.DATAACCESS\bin\Debug\RMS.DATAACCESS.dll
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\RMS\RMS.DATAACCESS\bin\Debug\RMS.DATAACCESS.pdb
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\RMS\RMS.DATAACCESS\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\RMS\RMS.DATAACCESS\obj\Debug\RMS.DATAACCESS.dll
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\RMS\RMS.DATAACCESS\obj\Debug\RMS.DATAACCESS.pdb
+C:\Users\DELL\Documents\Visual Studio 2012\Projects\RMS\RMS.DATAACCESS\obj\Debug\RMS.DATAACCESS.csprojResolveAssemblyReference.cache
+C:\Users\jeem\Desktop\RMS\RMS\RMS.DATAACCESS\bin\Debug\RMS.DATAACCESS.dll.config
+C:\Users\jeem\Desktop\RMS\RMS\RMS.DATAACCESS\bin\Debug\RMS.DATAACCESS.dll
+C:\Users\jeem\Desktop\RMS\RMS\RMS.DATAACCESS\bin\Debug\RMS.DATAACCESS.pdb
+C:\Users\jeem\Desktop\RMS\RMS\RMS.DATAACCESS\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\jeem\Desktop\RMS\RMS\RMS.DATAACCESS\obj\Debug\RMS.DATAACCESS.dll
+C:\Users\jeem\Desktop\RMS\RMS\RMS.DATAACCESS\obj\Debug\RMS.DATAACCESS.pdb
+C:\Users\jeem\Desktop\1knight.fbm\RMS\RMS\RMS.DATAACCESS\bin\Debug\RMS.DATAACCESS.dll.config
+C:\Users\jeem\Desktop\1knight.fbm\RMS\RMS\RMS.DATAACCESS\bin\Debug\RMS.DATAACCESS.dll
+C:\Users\jeem\Desktop\1knight.fbm\RMS\RMS\RMS.DATAACCESS\bin\Debug\RMS.DATAACCESS.pdb
+C:\Users\jeem\Desktop\1knight.fbm\RMS\RMS\RMS.DATAACCESS\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\jeem\Desktop\1knight.fbm\RMS\RMS\RMS.DATAACCESS\obj\Debug\RMS.DATAACCESS.csprojResolveAssemblyReference.cache
+C:\Users\jeem\Desktop\1knight.fbm\RMS\RMS\RMS.DATAACCESS\obj\Debug\RMS.DATAACCESS.dll
+C:\Users\jeem\Desktop\1knight.fbm\RMS\RMS\RMS.DATAACCESS\obj\Debug\RMS.DATAACCESS.pdb
